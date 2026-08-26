@@ -34,7 +34,7 @@ export default function Locations() {
 
   return (
     <section id="locations" className="section-padding relative">
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px] translate-x-1/2 translate-y-1/2" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-gold/5 rounded-full blur-[120px]" />
 
       <div ref={ref} className="max-w-7xl mx-auto">
         <motion.div

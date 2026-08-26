@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <section id="story" className="section-padding relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-gold/5 rounded-full blur-[120px]" />
 
       <div ref={ref} className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

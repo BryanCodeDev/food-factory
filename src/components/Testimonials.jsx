@@ -35,7 +35,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="section-padding relative">
-      <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gold/5 rounded-full blur-[100px]" />
 
       <div ref={ref} className="max-w-7xl mx-auto">
         <motion.div
