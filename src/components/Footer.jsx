@@ -1,3 +1,5 @@
+import logo from '../assets/logo.webp'
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -34,9 +36,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
           <div className="col-span-2 md:col-span-1">
             <a href="#hero" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
-                <span className="font-heading font-bold text-dark text-lg">FF</span>
-              </div>
+              <img
+                src={logo}
+                alt="Food Factory Parrilla"
+                className="w-10 h-10 object-contain rounded-lg"
+              />
               <span className="font-heading font-bold text-xl text-white tracking-tight">
                 FOOD FACTORY
               </span>

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import logo from '../assets/logo.webp'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navLinks = [
@@ -33,9 +33,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
-            <span className="font-heading font-bold text-dark text-lg">FF</span>
-          </div>
+          <img
+            src={logo}
+            alt="Food Factory Parrilla"
+            className="w-10 h-10 object-contain rounded-lg"
+          />
           <span className="font-heading font-bold text-xl text-white tracking-tight">
             FOOD FACTORY
           </span>
