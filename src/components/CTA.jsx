@@ -8,13 +8,13 @@ export default function CTA() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   return (
-    <section id="contact" className="section-padding relative overflow-hidden">
+    <section id="contact" className="section-padding relative overflow-hidden bg-charcoal">
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/90 to-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/60 to-dark/70 md:via-dark/70 md:to-dark/50" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.15),transparent_50%)]" />
       </div>
 
@@ -36,7 +36,7 @@ export default function CTA() {
             <span className="gradient-text">comienza aquí</span>
           </h2>
 
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed mb-10">
             Ven a descubrir el sabor, la pasión y la experiencia de Food Factory Parrilla.
             Te esperamos en nuestra mesa.
           </p>
