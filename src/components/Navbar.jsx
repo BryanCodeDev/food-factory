@@ -39,7 +39,7 @@ export default function Navbar() {
             alt="Food Factory Parrilla"
             className="w-10 h-10 object-contain rounded-lg"
           />
-          <span className="font-heading font-bold text-xl text-white tracking-tight">
+          <span className="font-heading font-bold text-xl text-white tracking-tight hidden sm:block">
             FOOD FACTORY
           </span>
         </a>
@@ -90,7 +90,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass mt-4 mx-4 rounded-2xl overflow-hidden"
+            className="md:hidden glass mt-4 mx-2 rounded-2xl overflow-hidden"
           >
             <div className="p-6 flex flex-col gap-4">
               {navLinks.map((link) => (
