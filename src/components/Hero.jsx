@@ -44,9 +44,9 @@ export default function Hero() {
     <section
       id="hero"
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-charcoal"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark/80 to-dark" />
+      <div className="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/70 to-dark" />
 
       <motion.div
         style={{ y, opacity }}
@@ -56,7 +56,7 @@ export default function Hero() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/60 to-dark/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/50 to-dark/30 md:via-dark/40 md:to-dark/20" />
       </motion.div>
 
       <motion.div
@@ -93,7 +93,7 @@ export default function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed"
           >
             Una experiencia de parrilla creada para quienes disfrutan la buena comida, los buenos momentos y el verdadero sabor.
           </motion.p>
